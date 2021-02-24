@@ -1,6 +1,6 @@
 
 
-const englishMorseAlphabet = {
+export const englishMorseAlphabet = {
      'a': '.- ',
      'b': '-... ',
      'c':'-.-. ',
@@ -39,7 +39,7 @@ const englishMorseAlphabet = {
      '0':'----- '
     }
 
-const translateMorseToEnglish = (input) => {
+export const translateMorseToEnglish = (input) => {
     let result = '';
     for(let i = 0; i < input.length; i++) {
         if(Object.values(englishMorseAlphabet).includes(`${input} `)) {
@@ -55,18 +55,14 @@ const translateMorseToEnglish = (input) => {
             result = result + englishMorseAlphabet[input.charAt(i)]
         } else if(!englishMorseAlphabet.hasOwnProperty(input) && input.charAt(i) === ' '){
             result = result + '/ '
-        } else if(input === '') {
-
-            return 'empty'
-
         } else {
             result = result + 'invalid character '
         }
     } return result
 }
 
-translateEnglishToMorse('abc d 0 6 !')
+translateEnglishToMorse('')
 
-console.log(translateEnglishToMorse('a b'))
+console.log(translateEnglishToMorse('abcd'))
 
 translateMorseToEnglish('-')
