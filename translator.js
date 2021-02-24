@@ -1,5 +1,5 @@
-const englishMorseAplhabet = {
-     'a': '.-',
+const englishMorseAlphabet = {
+     a: '.-',
      'b': '-...',
      'c':'-.-.',
      'd':'-..',
@@ -41,6 +41,12 @@ const translateMoreseToEnglish = (input) => {
     
 }
 
-const translateEnglishToMorse = (input) => {
-
+ export const translateEnglishToMorse = (input) => {
+    if(englishMorseAlphabet.hasOwnProperty(input)){
+        return englishMorseAlphabet[input]
+    } else if(!englishMorseAlphabet.hasOwnProperty(input) && input === ' '){
+        return ' / '
+    }
 }
+
+translateEnglishToMorse('0')

@@ -67,4 +67,3 @@ it ("Should translate '' to empty", () => {
     expect(result).toBe('empty')
 })
 
-i
