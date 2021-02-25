@@ -65,6 +65,7 @@ export function translateMorseToEnglish(input) {
         if (morseSplit[i] == '/'){
             result = result + ' '
         } else {
+            
          result = result + Object.keys(englishMorseAlphabet).find(key => englishMorseAlphabet[key] === `${morseSplit[i]} `);}
        
         } return result
