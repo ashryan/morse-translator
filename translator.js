@@ -39,14 +39,10 @@ export const englishMorseAlphabet = {
      '0':'----- '
     }
 
-export const translateMorseToEnglish = (input) => {
-    let result = '';
-    for(let i = 0; i < input.length; i++) {
-        if(Object.values(englishMorseAlphabet).includes(`${input} `)) {
-           console.log('it worked')
-        }
-    } return result
-}
+    
+
+
+    
 
  export const translateEnglishToMorse = (input) => {
     let result = '';
@@ -61,8 +57,24 @@ export const translateMorseToEnglish = (input) => {
     } return result
 }
 
-translateEnglishToMorse('')
 
-console.log(translateEnglishToMorse('abcd'))
+export function translateMorseToEnglish(input) {
+    const morseSplit = input.split(' ')
+    let result = ''
+    for(let i=0; i < morseSplit.length; i++) {
+        if (morseSplit[i] == '/'){
+            result = result + ' '
+        } else {
+         result = result + Object.keys(englishMorseAlphabet).find(key => englishMorseAlphabet[key] === `${morseSplit[i]} `);}
+       
+        } return result
+    }
+   
 
-translateMorseToEnglish('-')
+
+
+
+console.log(translateEnglishToMorse('a'))
+
+console.log(translateMorseToEnglish('-'))
+

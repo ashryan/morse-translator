@@ -4,16 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Arimo&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
   <body>
     <h1>Morse Translator</h1>
-    <div id="englishToMorse">
-      <h3 class="englishToMorse__header">English to Morse</h3>
-      <input class="englishToMorse__input" />
-      <button class="englishToMorse__btn">Translate</button>
-      <input class="englishToMorse__output" />
-    </div>
+    <div id="out-container">
+        <div id="englishToMorse">
+          <h3 class="englishToMorse__header">English to Morse</h3>
+          <input
+            type="text"
+            size="50"
+            class="englishToMorse__input"
+            placeholder="Enter English here"
+          />
+          <button class="englishToMorse__btn">Translate</button>
+          <input type="text" size="50" readonly class="englishToMorse__output" />
+        </div>
+        <div id="morseToEnglish">
+          <h3 class="morseToEnglish__header">Morse to English</h3>
+          <input
+            type="text"
+            size="50"
+            class="morseToEnglish__input"
+            placeholder="Enter Morse here"
+          />
+          <button class="morseToEnglish__btn">Translate</button>
+          <input type="text" size="50" readonly class="morseToEnglish__output" />
+        </div>
+        </div>
+  </div>
     <script async defer src="script.js" type="module"></script>
   </body>
 </html>
