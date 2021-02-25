@@ -58,7 +58,7 @@ var translateEnglishToMorse = function translateEnglishToMorse(input) {
     }
   }
 
-  return result;
+  return result.trim();
 };
 
 exports.translateEnglishToMorse = translateEnglishToMorse;

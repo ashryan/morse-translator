@@ -1,0 +1,17 @@
+$font-primary: 'Arimo', sans-serif;
+$font-size-head: 36px;
+$font-size-med: 28px;
+$font-size-small: 18px;
+
+body {
+    font-family: $font-primary;
+
+    h1{
+        font-size: $font-size-head
+    }
+
+    h3{
+        font-size: $font-size-med;
+    }
+
+}

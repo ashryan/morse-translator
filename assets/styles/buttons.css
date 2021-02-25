@@ -1,0 +1,19 @@
+body {
+  font-family: "Arimo", sans-serif;
+}
+body h1 {
+  font-size: 36px;
+}
+body h3 {
+  font-size: 28px;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  margin-bottom: 5%;
+  background-color: #e8eaf6;
+  border-color: #c5cae9;
+  font-family: "Arimo", sans-serif;
+  font-size: 18px;
+}

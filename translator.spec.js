@@ -39,29 +39,6 @@ it ('Should translate i //like grapes .. / invalid invalid .-.. -.- . / --. .-. 
     expect(result) .toBe('.. / invalid character invalid character .-.. -.- . / --. .-. .- .--. . ... ')
 })
 
-// it ('Should translate  to .-', () => {
-//     const result = translateEnglishToMorse('a')
-//     expect(result).toBe('.-')
-// })
-
-// it ('Should translate a to .-', () => {
-//     const result = translateEnglishToMorse('a')
-//     expect(result) .toBe('.-')
-// })
-
-// it ('Should translate a to .-', () => {
-//     const result = translateEnglishToMorse('a')
-//     expect(result) .toBe('.-')
-// })
-
-// it ('Should translate a to .-', () => {
-//     const result = translateEnglishToMorse('a')
-//     expect(result) .toBe('.-')
-// })
-
-
-//test null/empty
-
 it ("Should translate '' to empty", () => {
     const result = translateEnglishToMorse('')
     expect(result).toBe('empty ')
