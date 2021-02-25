@@ -1,6 +1,6 @@
 "use strict";
 
-var _translator = require("./translator.js");
+var _translator = require("./assets/scripts/translator.js");
 
 it('Should translate a to .-', function () {
   var result = (0, _translator.translateEnglishToMorse)('a');

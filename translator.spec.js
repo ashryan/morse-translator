@@ -1,4 +1,4 @@
-import {translateEnglishToMorse, translateMorseToEnglish} from './translator.js'
+import {translateEnglishToMorse, translateMorseToEnglish} from './assets/scripts/translator.js'
 
 it ('Should translate a to .-', () => {
     const result = translateEnglishToMorse('a')
